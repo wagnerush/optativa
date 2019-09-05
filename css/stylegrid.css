@@ -1,22 +1,23 @@
+body,html{
+	height: 100%;
+}
+
+
 #container{
 	border: 1px solid #000;
-	padding: 5px;
-	
+	height: 100%;
+	display: grid;
+	grid-template-rows: 25% 8% auto 15%;
 }
 
 #header{
 	border: 1px solid #000;
-	padding: 5px;
-	margin: 5px;
-	text-align: center;
 }
+
 #menu{
 	border: 1px solid #000;
-	margin: 5px;
-	padding: 5px;
-
-
 }
+
 #menu ul{
 
 	list-style: none;
@@ -29,13 +30,19 @@
 
 #main{
 	border: 1px solid #000;
-	margin: 10px 5px 10px 5px;
-	padding: 5px;
-	
+	display: grid;
+	grid-template-columns: 20% auto;
 }
+
+#main #menu-lateral{
+	border: 1px solid #000;
+}
+
+#main #containt{
+	border: 1px solid #000;
+}
+
 
 #footer{
 	border: 1px solid #000;
-	margin: 5px;
-	padding: 5px;
 }
