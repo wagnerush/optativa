@@ -7,7 +7,7 @@ body,html{
 	border: 1px solid #000;
 	height: 100%;
 	display: grid;
-	grid-template-rows: 25% auto 15%;
+	grid-template-rows: 25% minmax(min-content,8%) auto 15%;
 }
 
 #header{
@@ -15,36 +15,29 @@ body,html{
 }
 
 #menu{
-	display: none;
 	border: 1px solid #000;
+	display: inherit;
 }
 
 #menu ul{
-	display: flex;
-	list-style: none;
-	
+
+	display: block;
 }
 
-#menu ul li{
-	border: 1px solid #000;
-	margin: 5px;
-	padding: 5px;
+/*#menu ul li{
+	border: 1px solid blue;
+	display: inline;
 }
-
+*/
 #main{
 	border: 1px solid #000;
 	display: grid;
-	grid-template-columns: 20% auto;
+	grid-template-columns: auto;
 }
 
-#menu-lateral{
-	list-style: none;
-}
-
-#menu-lateral ul li{
+#main #menu-lateral{
 	border: 1px solid #000;
-	margin: 5px;
-	padding: 5px;
+	display: none;
 }
 
 #main #content{
