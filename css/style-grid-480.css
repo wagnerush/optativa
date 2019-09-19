@@ -8,6 +8,7 @@ body,html{
 	height: 100%;
 	display: grid;
 	grid-template-rows: 25% minmax(min-content,8%) auto 15%;
+	background: red;
 }
 
 #header{
@@ -20,15 +21,16 @@ body,html{
 }
 
 #menu ul{
-
+	margin: 0px;
+	padding: 0px;
 	display: block;
 }
 
-/*#menu ul li{
+#menu ul li{
 	border: 1px solid blue;
-	display: inline;
+	display: block;
 }
-*/
+
 #main{
 	border: 1px solid #000;
 	display: grid;
